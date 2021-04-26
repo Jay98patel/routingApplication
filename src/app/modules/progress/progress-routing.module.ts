@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { AdvertisementComponent } from '../quiz/components/advertisement/advertisement.component';
+import { PerformanceComponent } from './performance/performance.component';
 import { ProgressComponent } from './progress.component';
 
 
@@ -9,6 +11,9 @@ const routes: Routes = [
   },
   {
     path:'progress',component:ProgressComponent
+  },
+  {
+    path:'performance',component:PerformanceComponent
   }
 ];
 
