@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { PageNotFoundComponent } from './shared/page-not-found/page-not-found.component';
 
 
 const routes: Routes = [
@@ -18,6 +19,9 @@ const routes: Routes = [
   {
     path: 'instructors', loadChildren: () => import('./modules/instructors/instructors.module').then(m => m.InstructorsModule)
   },
+  {
+    path:'**',component:PageNotFoundComponent
+  }
   
 ];
 
